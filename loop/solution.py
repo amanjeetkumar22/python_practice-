@@ -1,4 +1,4 @@
-a=[]
+a=[] #tuples 
 n=int(input("Enter the size:"))
 for i in range (n):
     num=int(input("Enter the numbers:"))
