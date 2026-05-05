@@ -6,7 +6,7 @@
 # st = """hello I am aman
 #         kaise ho bhai """
 
-# f=open("files.txt","w")#appending->"a" to add something in end 
+# f=open("files.txt","w")##appending->"a" to add something in end 
 # f.write(st) #write something in text file 
 # f.close
 
@@ -21,6 +21,7 @@
 # # print(line)
 
 # # using while loop reading the txt file 
+
 # line=f.readline()
 # while(line != ""):
 #     print(line)
