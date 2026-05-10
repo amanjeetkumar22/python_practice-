@@ -1,4 +1,4 @@
-# f=open("files.txt") #open("file.txt","mode of opening") #read bydefault 
+# f=open("files.txt") #open("file.txt","mode of opening") #read by default 
 # data =f.read()
 # print(data)
 # f.close()
