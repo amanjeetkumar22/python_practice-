@@ -13,11 +13,17 @@ class student :
     def greet():
         print("Good Morning")
 
+    @classmethod##it takes only class attributes value 
+    def getinfoclass(cls):#when u introduce any method then use "cls" to  call 
+        print(f"branch is : {cls.branch}, and campus is :{cls.camp}")
+
 aman = student() #object-> aman
 aman.name="Aman" #instance/ object attribute 
-
 print(aman.name,aman.branch,aman.camp)
 
-aman.getinfo()#TypeError: student.getinfo() takes 0 positional arguments but 1 was given
 ##student.getinfo(aman) this means 
+aman.getinfo()#TypeError: student.getinfo() takes 0 positional arguments but 1 was given
 aman.greet()
+
+aman.camp="02"##if we used "@classmethod" then instance attribute doesn't update in class 
+aman.getinfoclass()##using classmethod 

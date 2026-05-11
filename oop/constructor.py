@@ -1,5 +1,5 @@
 class student:
-    # name="Aman"
+    #name="Aman"
     branch="cse"
     cam="25"
     
