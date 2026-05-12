@@ -1,0 +1,6 @@
+class complexn:
+    def __init__(self,r,i):
+        self.r=r
+        self.i=i
+
+    def 

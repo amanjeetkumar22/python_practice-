@@ -14,9 +14,21 @@ class student:
     def getinfoclass(cls):#when u introduce any method then use "cls" to  call 
         print(f"branch is : {cls.room}, and campus is :{cls.floor}")
 
+    @property ##u can return after using property 
+    def name(self):
+        return f"{self.fname} {self.lname}"
     
+    @name.setter
+    def name(self,value):
+        self.fname = value.split(" ")[0]
+        self.lname = value.split(" ")[1]
+
 o=student()
-# print(o.greet)
-o.getinfo()
-o.greet()
-o.getinfoclass()
+# # print(o.greet)
+# o.getinfo()
+# o.greet()
+# o.getinfoclass()
+
+o.name="Aman Jeet"
+print(o.name)
+print(o.fname,o.lname)

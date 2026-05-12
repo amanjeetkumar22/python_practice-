@@ -8,12 +8,14 @@ class Programmer:
 
         
 nu=int(input("Number of client:"))
-
-for i in range(1,nu):
+programmers=[]
+for i in range(nu):
     n=input("Enter Name:")
     d=input("Enter department:")
     s=input("Salary:")
     p=Programmer(n,d,s)
+    programmers.append(p)
 
-for i in range(1,nu):##how to store all data and print 
-    print(p.name,p.dep,p.salary,p.company)
+for i in programmers:##how to store all data and print 
+    print(i.name,i.dep,i.salary,i.company)
+
