@@ -6,13 +6,13 @@ class student:
 class stud:
     h=3
 class std(student,stud):##multiple inheritance 
-    def __init__(self):
+    def __aman__(self):
         print("I am std")
     b=2
 
 class s(std,student):#multilevel inheritance
     def __init__(self):
-        super().__init__()##to call parent class constructor 
+        super().__aman__()##to call parent class constructor 
         print("I am s")
     c=3
 ##multiple inheritance

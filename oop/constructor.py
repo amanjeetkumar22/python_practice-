@@ -3,7 +3,7 @@ class student:
     branch="cse"
     cam="25"
     
-    def __init__(self,name,branch,cam):
+    def __init__(self,name,branch,cam):##init is variable u can change it 
     # def __init__(self):
         self.name=name
         self.branch=branch

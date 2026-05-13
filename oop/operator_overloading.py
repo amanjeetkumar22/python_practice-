@@ -3,9 +3,10 @@ class number:
         self.n=n
     
     def __add__(self,num):
-        return self.n*num.n
+        return self.n+num.n
+     
 
-n=number(1)
+n=number(2)
 m=number(2)
 
 print(n + m)
