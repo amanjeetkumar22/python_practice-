@@ -1,3 +1,5 @@
+c1=complex(1,2)
+c2=complex(3,4)
 class complex:
     def __init__(self,r,i):
         self.r=r
@@ -10,6 +12,4 @@ class complex:
     # def __str__(self):##define printing format 
     #     return f"{self.r}+{self.i}i"
     
-c1=complex(1,2)
-c2=complex(3,4)
 print(c1+c2)
