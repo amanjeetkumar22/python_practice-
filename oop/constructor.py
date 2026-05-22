@@ -17,4 +17,4 @@ class student:
 aman=student("Amit","Ai","24") #here we can pass the value 
 # aman.greet()
 aman.name="Aman"
-print(aman.name,aman.branch)
+print(aman.name,aman.branch) #Aman Ai
