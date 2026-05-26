@@ -3,3 +3,6 @@
 -getter method 
 -setter method 
 </details>
+
+# decorator
+ 

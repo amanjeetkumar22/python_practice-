@@ -14,3 +14,10 @@ def example_function(n):
     time.sleep(n)
 
 example_function(2)
+
+@timer
+def addd(a,b):
+    time.sleep(4)
+    return a+b;
+
+print(addd(2,3))
