@@ -1,0 +1,89 @@
+import json 
+
+def load_data():
+    try:
+        with open('youtube.txt','r') as file:
+            test=json.load(file)
+            print(type(test))
+            return test
+    except FileNotFoundError:
+        return []
+    
+def save_data(videos):
+    with open('youtube.txt','w') as file:
+        json.dump(videos, file)
+
+def list_all(videos):
+    print("\n")
+    print("-"*50)
+    for index, video in enumerate(videos,start=1): 
+        print(f"{index}. {video['name']}, Duration:{video['time']}")
+    # print("\n")
+    print("-"*50)
+
+def addd(videos):
+    name= input("Enter Video Name:")
+    time =input("Enter video time:")
+    videos.append({'name':name,'time':time})
+    save_data(videos)
+
+
+def update_video(videos):
+    list_all(videos)
+    n = int(input("Enter the video number to update:"))
+
+    if 1<= n <= len(videos):
+        name =input("Enter the video name:")
+        time =input("Enter the video time:")
+        videos(index-1) = {'name':name,'time':time}
+        save_data(videos)
+
+    else:
+        print("Invalid index selected")
+
+def delete_video(videos):
+    list_all(videos)
+    n= int(input("Enter the video number to be deleted:"))
+    
+    if 1<= n <= len(videos):
+        del videos[index-1]
+        save_data(videos)
+    else:
+        print("Invalid video index selected")
+    
+def main():
+    videos=load_data()
+    while True:
+        print("\n---Youtube Manager---")
+        print("1.List all youtube videos")
+        print("2.Add a youtube video")
+        print("3.Update a youtube video details")
+        print("4.Delet a youtube video")
+        print("5.Exit the app")
+        choice = input("Enter your choice:")
+        # print(videos)
+
+        match choice:
+            case '1':
+                list_all(videos)
+
+            case '2':
+                addd(videos)
+
+            case '3':
+                update_video(videos)
+
+            case '4':
+                delete_video(videos)
+            case '5':
+                break
+            case _:
+                print("Invalid choice")
+
+if __name__== "__main__": ##dunder 
+    main()
+
+'[{}, {}]'
+
+
+    
