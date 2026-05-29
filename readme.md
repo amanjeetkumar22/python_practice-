@@ -14,3 +14,15 @@
 
 
 ### what del (function return) ## illustrate del function 
+
+# database in python 
+
+##
+
+
+
+## api handling 
+## dsa in python (dict,set,tuple,list,etc)
+### freeapi.app
+
+
