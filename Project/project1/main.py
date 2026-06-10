@@ -26,7 +26,10 @@ def processcommand(c):
 if __name__== "__main__":
     # speak("Hey sir how may i help uh How are you buddy?")
     speak("Intializing jarvis..")
+   
     while True:
+        # Listen for the wake word "Jarvis"
+        # obtain audio from the microphone
         r = sr.Recognizer()
 
         print("---recognizing---")

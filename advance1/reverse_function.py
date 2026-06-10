@@ -1,8 +1,5 @@
 s=input("Enter string:")
 
-# for i in s:
-#     print(i)
-
 # ## reverse function
 
 print(s[::-1]) ## reverse function 

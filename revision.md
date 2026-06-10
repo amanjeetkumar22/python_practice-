@@ -29,4 +29,7 @@
 ### to read json format 
 
 
+https://docs.google.com/document/u/2/d/1mguv0CSGO_1HzrLjbt9jpAMAhMmsvLwLUxGOLfztV38/mobilebasic
+
+
 

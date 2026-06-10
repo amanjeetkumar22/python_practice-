@@ -11,25 +11,25 @@ def speak(text):
 
 
 
+
+print(sr.Microphone.list_microphone_names())
 if __name__== "__main__":
-    # speak("Initialising jarvis...")
-    # speak("ye    motki     chup    kr     jake     khana    lao")
-    speak("Ye Suman khana lao ")
+    speak("Initialising jarvis...")
     while True:
         # Listen for the wake word "Jarvis"
         # obtain audio from the microphone 
 
         r = sr.Recognizer()
         with sr.Microphone() as source:
-            print("Say something!!")
-            audio = r.listen(source)
+            print("Listening...")
+            audio = r.listen(source,timeout=2)
 
-        ##recognise speech using sphinx
+        print("Recognising...")
         try:
-            command = r.recognize_sphinx(audio)
+            command = r.recognize_google(audio)
             print(command)
         except sr.UnknownValueError:
-            print("Sphinx could not understand audio")
+            print("Could not understand audio")
 
         except sr.RequestError as e:
             print("Sphinx error;{0}".format(e))
